@@ -1,0 +1,27 @@
+<html>
+<head>
+
+</head>
+<style>
+    table {
+        margin-top:30px;
+    }
+</style>
+
+<body>
+    <h3 align="center">please enter your details on login</h3>
+
+    <form action=" " method="POST">
+        {% csrf_token %}
+        <table bgcolor="#deb887" align="center">
+            <tr><td>User Name :</td><td>{{form.user}}</td></tr>
+            <tr><td>Password :</td><td>{{form.pwd}}</td></tr>
+            <tr><td></td><td><input type="submit" value="login"></td></tr>
+        </table>
+        <br>
+        <h2 align="center"><a href="./">Go to Home Page</a></h2>
+        <h2 align="center"><a href="./reg">Go to Registration Page</a></h2>
+    </form>
+
+</body>
+</html>
